@@ -32,7 +32,7 @@ export default function ContactForm() {
     );
 
   return (
-    <form onSubmit={onSubmit} className="card space-y-4">
+    <form onSubmit={onSubmit} className="card !p-6 space-y-6">
       <h3 className="font-display text-lg font-bold">Send a message</h3>
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
@@ -46,7 +46,7 @@ export default function ContactForm() {
       </div>
       <div>
         <label htmlFor="cf-message" className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Message</label>
-        <textarea id="cf-message" name="message" required rows={5} placeholder="Tell me about your project…" className={input} />
+        <textarea id="cf-message" name="message" required rows={3} placeholder="Tell me about your project…" className={input} />
       </div>
       {/* honeypot: মানুষ দেখে না, বট পূরণ করে */}
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 opacity-0" />
