@@ -32,10 +32,10 @@ export const profile = {
 };
 
 export const skills: Record<string, [string, number][]> = {
-  Frontend: [["HTML5 & CSS", 90], ["JavaScript", 88], ["TypeScript", 80], ["React.js", 88], ["Next.js", 82], ["Tailwind CSS", 90]],
-  Backend: [["Node.js", 82], ["Express", 82], ["MongoDB", 75], ["REST API", 80], ["PostgreSQL", 72]],
-  Tools: [["Git & GitHub", 90], ["VS Code", 95], ["Figma", 70], ["Postman", 80], ["Vercel & Netlify", 85]],
-  Design: [["Adobe Photoshop", 95], ["Photo Retouching", 98], ["Adobe Illustrator", 85]],
+  Frontend: [["HTML5 & CSS", 95], ["JavaScript", 88], ["TypeScript", 85], ["React.js", 88], ["Next.js", 82], ["Tailwind CSS", 90]],
+  Backend: [["Node.js", 82], ["Express", 82], ["MongoDB", 85], ["REST API", 80], ["PostgreSQL", 80]],
+  Tools: [["Git & GitHub", 95], ["VS Code", 95], ["Figma", 90], ["Vercel & Netlify", 85]],
+  Design: [["Adobe Photoshop", 99], ["Photo Retouching", 98], ["Adobe Illustrator", 85]],
 };
 
 export const education = [
