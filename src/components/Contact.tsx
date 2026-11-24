@@ -9,7 +9,7 @@ export default function Contact() {
     { icon: <MessageCircle size={19} />, label: "WhatsApp", text: `+${profile.whatsapp}`, href: `https://wa.me/${profile.whatsapp}` },
   ];
   return (
-    <section id="contact" className="relative mx-auto max-w-6xl px-5 pb-24 pt-20 sm:pt-24">
+    <section id="contact" className="relative mx-auto max-w-6xl px-5 pb-16 pt-12 sm:pt-16">
       {/* CTA ব্যানার */}
       <Reveal>
         <div className="relative mb-12 overflow-hidden rounded-[2rem] bg-gradient-to-r from-brand to-accent p-8 text-center text-white shadow-2xl shadow-brand/20 sm:p-14">

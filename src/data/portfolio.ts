@@ -11,7 +11,7 @@ export const profile = {
     "Front-End Developer building fast, responsive and pixel-perfect web applications with React.js, Next.js, TypeScript, Tailwind CSS, Node.js and MongoDB. My 12+ years in photo retouching gave me a sharp eye for design and detail.",
   photo: "/images/rokon.jpg",
   roles: ["Front-End Developer", "React & Next.js Developer", "Full Stack Web Developer"],
-  stats: [["3", "Web Projects"], ["9+", "Technologies"], ["12+", "Years in Visual Design"]] as [string, string][],
+  stats: [["4", "Web Projects"], ["9+", "Technologies"], ["12+", "Years in Visual Design"]] as [string, string][],
   resumeUrl: "/Rokon_Sarker_Resume.pdf", // public/ ফোল্ডারে এই নামে PDF রাখুন
   email: "odesk.rokon@gmail.com",
   phone: "+8801743928670",
@@ -44,7 +44,7 @@ export const education = [
 ];
 
 export const experience = [
-  { period: "2024 – Present", title: "Front-End Developer", place: "Personal & Freelance Projects", note: "Built StudioSpace, FitLog and Dev Stack with React.js, Next.js, Tailwind CSS and MongoDB." },
+  { period: "2024 – Present", title: "Front-End Developer", place: "Personal & Freelance Projects", note: "Built SalonBook, StudioSpace, FitLog and Dev Stack with React.js, Next.js, Tailwind CSS and MongoDB." },
   { period: "2023 – Present", title: "Full Stack Web Developer (Freelance)", place: "Fiverr & Direct Clients", note: "End-to-end web apps with Next.js, Express and MongoDB — booking platforms, dashboards and REST APIs." },
   { period: "2023 – 2024", title: "React & Next.js Developer", place: "Remote Projects", note: "Responsive, pixel-perfect UIs and component systems with React.js, TypeScript and Tailwind CSS." },
   { period: "Dec 2022 – Jul 2024", title: "Main Photo Retoucher", place: "Amenex Group (Freelance)", note: "Retouched model and clothing photos; colour consulting and image editing." },
@@ -54,6 +54,15 @@ export const experience = [
 
 // ✏️ GitHub লিংক ও টেকনোলজি স্ট্যাক নিজের মতো ঠিক করে নিন।
 export const projects: Project[] = [
+  {
+    slug: "salonbook", name: "SalonBook — Salon Appointment Booking Platform", image: "/projects/p4.jpg",
+    stack: ["Next.js", "React.js", "Tailwind CSS", "MongoDB", "Stripe"],
+    description: "A calm, modern salon booking platform where customers search services by category and price, choose a date and time slot, and manage everything from a personal dashboard. It includes email and Google sign-in, an admin area for services, users and bookings, and secure Stripe payments.",
+    live: "https://salonbook-client-gamma-three.vercel.app/", github: "https://github.com/Rokon70/salonbook-client",
+    features: ["Search, category filter and price sorting on the services page", "Email/password and Google sign-in with role-based redirect", "Protected booking flow with date and predefined time slots", "Customer dashboard with appointments, cancellations and Pay Now via Stripe", "Admin dashboard for services, image upload, users and transactions"],
+    challenges: ["Preventing double-booking of the same date and time slot.", "Verifying Better Auth JWT tokens on the Express API with JWKS.", "Confirming payments only after a verified Stripe webhook event.", "Keeping customer and admin areas separate with server-side role checks."],
+    future: ["Email and SMS appointment reminders.", "Calendar sync for stylists and customers.", "Reviews and ratings for each service.", "Gift cards and membership packages."],
+  },
   {
     slug: "studiospace", name: "StudioSpace — Studio Booking Platform", image: "/projects/p1.jpg",
     stack: ["Next.js", "React.js", "Tailwind CSS", "MongoDB"],
